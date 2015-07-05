@@ -1,5 +1,5 @@
 //
-//  AFBufferAdapter.h
+//  AFBufferCellController.h
 //  AFTableKit
 //
 //  Created by Ashkon Farhangi on 1/31/14.
@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "AFTableRowAdapter.h"
+#import "AFTableCellController.h"
 
-@interface AFBufferAdapter : AFTableRowAdapter
+@interface AFBufferCellController : AFTableCellController
 
 @property (nonatomic) CGFloat height;
 @property (nonatomic) UIColor *backgroundColor;

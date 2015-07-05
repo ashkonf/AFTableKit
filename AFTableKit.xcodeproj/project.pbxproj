@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		E73067321AE40CBA008FA8C0 /* libAFTableKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E73067261AE40CBA008FA8C0 /* libAFTableKit.a */; };
-		E73067581AE40CF4008FA8C0 /* AFAdaptedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73067411AE40CF4008FA8C0 /* AFAdaptedTableViewController.m */; };
-		E73067591AE40CF4008FA8C0 /* AFBasicAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E73067441AE40CF4008FA8C0 /* AFBasicAdapter.m */; };
-		E730675A1AE40CF4008FA8C0 /* AFBufferAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E73067461AE40CF4008FA8C0 /* AFBufferAdapter.m */; };
+		E73067581AE40CF4008FA8C0 /* AFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73067411AE40CF4008FA8C0 /* AFTableViewController.m */; };
+		E730675A1AE40CF4008FA8C0 /* AFBufferCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73067461AE40CF4008FA8C0 /* AFBufferCellController.m */; };
 		E730675B1AE40CF4008FA8C0 /* AFImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E73067481AE40CF4008FA8C0 /* AFImageCell.m */; };
 		E730675C1AE40CF4008FA8C0 /* AFStaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E730674A1AE40CF4008FA8C0 /* AFStaticTableViewController.m */; };
 		E730675D1AE40CF4008FA8C0 /* AFStaticTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = E730674C1AE40CF4008FA8C0 /* AFStaticTableViewSection.m */; };
-		E730675E1AE40CF4008FA8C0 /* AFTableRowAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E730674F1AE40CF4008FA8C0 /* AFTableRowAdapter.m */; };
+		E730675E1AE40CF4008FA8C0 /* AFTableCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = E730674F1AE40CF4008FA8C0 /* AFTableCellController.m */; };
 		E730675F1AE40CF4008FA8C0 /* AFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E73067511AE40CF4008FA8C0 /* AFTableViewCell.m */; };
 		E73067601AE40CF4008FA8C0 /* AFTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E73067531AE40CF4008FA8C0 /* AFTextFieldCell.m */; };
 		E73067611AE40CF4008FA8C0 /* AFTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E73067551AE40CF4008FA8C0 /* AFTextViewCell.m */; };
 		E73067621AE40CF4008FA8C0 /* UITableViewCell+AFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E73067571AE40CF4008FA8C0 /* UITableViewCell+AFUtilities.m */; };
+		E73067A61AEAEBEE008FA8C0 /* AFTableKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E730674D1AE40CF4008FA8C0 /* AFTableKit.h */; };
+		E73067A71AEAEBEE008FA8C0 /* UIKitConstants+AFEstimates.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E73067681AE40EF1008FA8C0 /* UIKitConstants+AFEstimates.h */; };
+		E73067A81AEAEBEE008FA8C0 /* UITableViewCell+AFUtilities.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E73067561AE40CF4008FA8C0 /* UITableViewCell+AFUtilities.h */; };
+		E73067A91AEAEBEE008FA8C0 /* AFTableViewDatasource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E73067421AE40CF4008FA8C0 /* AFTableViewDatasource.h */; };
+		E73067AA1AEAEBEE008FA8C0 /* AFTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E73067401AE40CF4008FA8C0 /* AFTableViewController.h */; };
+		E73067AB1AEAEBEE008FA8C0 /* AFTableCellController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E730674E1AE40CF4008FA8C0 /* AFTableCellController.h */; };
+		E73067AC1AEAEBEE008FA8C0 /* AFBufferCellController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E73067451AE40CF4008FA8C0 /* AFBufferCellController.h */; };
+		E73067AD1AEAEBEE008FA8C0 /* AFTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E73067501AE40CF4008FA8C0 /* AFTableViewCell.h */; };
+		E73067AE1AEAEBEE008FA8C0 /* AFImageCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E73067471AE40CF4008FA8C0 /* AFImageCell.h */; };
+		E73067AF1AEAEBEE008FA8C0 /* AFTextFieldCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E73067521AE40CF4008FA8C0 /* AFTextFieldCell.h */; };
+		E73067B01AEAEBEE008FA8C0 /* AFTextViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E73067541AE40CF4008FA8C0 /* AFTextViewCell.h */; };
+		E73067B11AEAEBEE008FA8C0 /* AFStaticTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E73067491AE40CF4008FA8C0 /* AFStaticTableViewController.h */; };
+		E73067B21AEAEBEE008FA8C0 /* AFStaticTableViewSection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E730674B1AE40CF4008FA8C0 /* AFStaticTableViewSection.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +50,19 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				E73067A61AEAEBEE008FA8C0 /* AFTableKit.h in CopyFiles */,
+				E73067A71AEAEBEE008FA8C0 /* UIKitConstants+AFEstimates.h in CopyFiles */,
+				E73067A81AEAEBEE008FA8C0 /* UITableViewCell+AFUtilities.h in CopyFiles */,
+				E73067A91AEAEBEE008FA8C0 /* AFTableViewDatasource.h in CopyFiles */,
+				E73067AA1AEAEBEE008FA8C0 /* AFTableViewController.h in CopyFiles */,
+				E73067AB1AEAEBEE008FA8C0 /* AFTableCellController.h in CopyFiles */,
+				E73067AC1AEAEBEE008FA8C0 /* AFBufferCellController.h in CopyFiles */,
+				E73067AD1AEAEBEE008FA8C0 /* AFTableViewCell.h in CopyFiles */,
+				E73067AE1AEAEBEE008FA8C0 /* AFImageCell.h in CopyFiles */,
+				E73067AF1AEAEBEE008FA8C0 /* AFTextFieldCell.h in CopyFiles */,
+				E73067B01AEAEBEE008FA8C0 /* AFTextViewCell.h in CopyFiles */,
+				E73067B11AEAEBEE008FA8C0 /* AFStaticTableViewController.h in CopyFiles */,
+				E73067B21AEAEBEE008FA8C0 /* AFStaticTableViewSection.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,13 +72,11 @@
 		E73067261AE40CBA008FA8C0 /* libAFTableKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFTableKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E73067311AE40CBA008FA8C0 /* AFTableKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFTableKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E73067371AE40CBA008FA8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E73067401AE40CF4008FA8C0 /* AFAdaptedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdaptedTableViewController.h; sourceTree = "<group>"; };
-		E73067411AE40CF4008FA8C0 /* AFAdaptedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAdaptedTableViewController.m; sourceTree = "<group>"; };
-		E73067421AE40CF4008FA8C0 /* AFAdaptedTableViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdaptedTableViewDatasource.h; sourceTree = "<group>"; };
-		E73067431AE40CF4008FA8C0 /* AFBasicAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFBasicAdapter.h; path = AFTableKit/AFBasicAdapter.h; sourceTree = "<group>"; };
-		E73067441AE40CF4008FA8C0 /* AFBasicAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFBasicAdapter.m; path = AFTableKit/AFBasicAdapter.m; sourceTree = "<group>"; };
-		E73067451AE40CF4008FA8C0 /* AFBufferAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFBufferAdapter.h; path = AFTableKit/AFBufferAdapter.h; sourceTree = "<group>"; };
-		E73067461AE40CF4008FA8C0 /* AFBufferAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFBufferAdapter.m; path = AFTableKit/AFBufferAdapter.m; sourceTree = "<group>"; };
+		E73067401AE40CF4008FA8C0 /* AFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFTableViewController.h; sourceTree = "<group>"; };
+		E73067411AE40CF4008FA8C0 /* AFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFTableViewController.m; sourceTree = "<group>"; };
+		E73067421AE40CF4008FA8C0 /* AFTableViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFTableViewDatasource.h; sourceTree = "<group>"; };
+		E73067451AE40CF4008FA8C0 /* AFBufferCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFBufferCellController.h; path = AFTableKit/AFBufferCellController.h; sourceTree = "<group>"; };
+		E73067461AE40CF4008FA8C0 /* AFBufferCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFBufferCellController.m; path = AFTableKit/AFBufferCellController.m; sourceTree = "<group>"; };
 		E73067471AE40CF4008FA8C0 /* AFImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageCell.h; sourceTree = "<group>"; };
 		E73067481AE40CF4008FA8C0 /* AFImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageCell.m; sourceTree = "<group>"; };
 		E73067491AE40CF4008FA8C0 /* AFStaticTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFStaticTableViewController.h; sourceTree = "<group>"; };
@@ -61,8 +84,8 @@
 		E730674B1AE40CF4008FA8C0 /* AFStaticTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFStaticTableViewSection.h; sourceTree = "<group>"; };
 		E730674C1AE40CF4008FA8C0 /* AFStaticTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFStaticTableViewSection.m; sourceTree = "<group>"; };
 		E730674D1AE40CF4008FA8C0 /* AFTableKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFTableKit.h; sourceTree = "<group>"; };
-		E730674E1AE40CF4008FA8C0 /* AFTableRowAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFTableRowAdapter.h; path = AFTableKit/AFTableRowAdapter.h; sourceTree = "<group>"; };
-		E730674F1AE40CF4008FA8C0 /* AFTableRowAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFTableRowAdapter.m; path = AFTableKit/AFTableRowAdapter.m; sourceTree = "<group>"; };
+		E730674E1AE40CF4008FA8C0 /* AFTableCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFTableCellController.h; path = AFTableKit/AFTableCellController.h; sourceTree = "<group>"; };
+		E730674F1AE40CF4008FA8C0 /* AFTableCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFTableCellController.m; path = AFTableKit/AFTableCellController.m; sourceTree = "<group>"; };
 		E73067501AE40CF4008FA8C0 /* AFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFTableViewCell.h; sourceTree = "<group>"; };
 		E73067511AE40CF4008FA8C0 /* AFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFTableViewCell.m; sourceTree = "<group>"; };
 		E73067521AE40CF4008FA8C0 /* AFTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFTextFieldCell.h; sourceTree = "<group>"; };
@@ -143,10 +166,10 @@
 		E73067631AE40D01008FA8C0 /* Table Cells */ = {
 			isa = PBXGroup;
 			children = (
-				E73067471AE40CF4008FA8C0 /* AFImageCell.h */,
-				E73067481AE40CF4008FA8C0 /* AFImageCell.m */,
 				E73067501AE40CF4008FA8C0 /* AFTableViewCell.h */,
 				E73067511AE40CF4008FA8C0 /* AFTableViewCell.m */,
+				E73067471AE40CF4008FA8C0 /* AFImageCell.h */,
+				E73067481AE40CF4008FA8C0 /* AFImageCell.m */,
 				E73067521AE40CF4008FA8C0 /* AFTextFieldCell.h */,
 				E73067531AE40CF4008FA8C0 /* AFTextFieldCell.m */,
 				E73067541AE40CF4008FA8C0 /* AFTextViewCell.h */,
@@ -158,12 +181,10 @@
 		E73067641AE40D09008FA8C0 /* Table Cell Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E73067431AE40CF4008FA8C0 /* AFBasicAdapter.h */,
-				E73067441AE40CF4008FA8C0 /* AFBasicAdapter.m */,
-				E73067451AE40CF4008FA8C0 /* AFBufferAdapter.h */,
-				E73067461AE40CF4008FA8C0 /* AFBufferAdapter.m */,
-				E730674E1AE40CF4008FA8C0 /* AFTableRowAdapter.h */,
-				E730674F1AE40CF4008FA8C0 /* AFTableRowAdapter.m */,
+				E730674E1AE40CF4008FA8C0 /* AFTableCellController.h */,
+				E730674F1AE40CF4008FA8C0 /* AFTableCellController.m */,
+				E73067451AE40CF4008FA8C0 /* AFBufferCellController.h */,
+				E73067461AE40CF4008FA8C0 /* AFBufferCellController.m */,
 			);
 			name = "Table Cell Controllers";
 			path = ..;
@@ -185,9 +206,9 @@
 			children = (
 				E73067561AE40CF4008FA8C0 /* UITableViewCell+AFUtilities.h */,
 				E73067571AE40CF4008FA8C0 /* UITableViewCell+AFUtilities.m */,
-				E73067401AE40CF4008FA8C0 /* AFAdaptedTableViewController.h */,
-				E73067411AE40CF4008FA8C0 /* AFAdaptedTableViewController.m */,
-				E73067421AE40CF4008FA8C0 /* AFAdaptedTableViewDatasource.h */,
+				E73067421AE40CF4008FA8C0 /* AFTableViewDatasource.h */,
+				E73067401AE40CF4008FA8C0 /* AFTableViewController.h */,
+				E73067411AE40CF4008FA8C0 /* AFTableViewController.m */,
 			);
 			name = Basics;
 			sourceTree = "<group>";
@@ -280,17 +301,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E73067581AE40CF4008FA8C0 /* AFAdaptedTableViewController.m in Sources */,
+				E73067581AE40CF4008FA8C0 /* AFTableViewController.m in Sources */,
 				E73067621AE40CF4008FA8C0 /* UITableViewCell+AFUtilities.m in Sources */,
-				E730675A1AE40CF4008FA8C0 /* AFBufferAdapter.m in Sources */,
+				E730675A1AE40CF4008FA8C0 /* AFBufferCellController.m in Sources */,
 				E730675D1AE40CF4008FA8C0 /* AFStaticTableViewSection.m in Sources */,
 				E730675B1AE40CF4008FA8C0 /* AFImageCell.m in Sources */,
 				E73067611AE40CF4008FA8C0 /* AFTextViewCell.m in Sources */,
 				E73067601AE40CF4008FA8C0 /* AFTextFieldCell.m in Sources */,
 				E730675C1AE40CF4008FA8C0 /* AFStaticTableViewController.m in Sources */,
-				E730675E1AE40CF4008FA8C0 /* AFTableRowAdapter.m in Sources */,
+				E730675E1AE40CF4008FA8C0 /* AFTableCellController.m in Sources */,
 				E730675F1AE40CF4008FA8C0 /* AFTableViewCell.m in Sources */,
-				E73067591AE40CF4008FA8C0 /* AFBasicAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

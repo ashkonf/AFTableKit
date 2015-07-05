@@ -1,29 +1,29 @@
 //
-//  AFTableCellAdapter.m
+//  AFTableCellController.m
 //  AFTableKit
 //
 //  Created by Ashkon Farhangi on 9/1/13.
 //  Copyright (c) 2013 Ashkon Farhangi. All rights reserved.
 //
 
-#import "AFTableRowAdapter.h"
+#import "AFTableCellController.h"
 
-#import "AFAdaptedTableViewController.h"
+#import "AFTableViewController.h"
 #import "UITableViewCell+AFUtilities.h"
 #import "AFTableViewCell.h"
 
-@interface AFTableRowAdapter()
+@interface AFTableCellController()
 
 @property (nonatomic, readwrite) id object;
-@property (nonatomic, weak, readwrite) AFAdaptedTableViewController *tableViewController;
+@property (nonatomic, weak, readwrite) AFTableViewController *tableViewController;
 
 @property (nonatomic, readonly) UIEdgeInsets cellContentEdgeInsets;
 
 @end
 
-@implementation AFTableRowAdapter
+@implementation AFTableCellController
 
-- (instancetype)initWithObject:(id)object inTableViewController:(AFAdaptedTableViewController *)tableViewController
+- (instancetype)initWithObject:(id)object inTableViewController:(AFTableViewController *)tableViewController
 {
     self = [super init];
     if (self) {
@@ -37,16 +37,15 @@
 /// would be nice for entire adapted table view scheme to work with regular table views and cells
 - (void)makeCellReloadData
 {
-    UITableViewCell *cell = [self.delegate tableRowAdapter:self cellForObject:self.object];
+    UITableViewCell *cell = [self.delegate tableCellController:self cellForObject:self.object];
     if ([cell isKindOfClass:[AFTableViewCell class]]) {
         AFTableViewCell *afCell = (AFTableViewCell *)cell;
         [afCell reloadData];
         // Height didn't necessarily change, but we reload the cell anyway
-        [self.delegate tableRowAdapter:self heightChangedForCellWithObject:self.object];
+        [self.delegate tableCellController:self cellForObject:self.object];
     }
 }
 
-/// good pragma mark?
 #pragma mark - Datasource, so to speak
 
 + (Class)cellClass
@@ -54,8 +53,7 @@
     return [UITableViewCell class];
 }
 
-//// need to go through all subclasses and change them so they call super now, and implement cellClass to conform to this new way of getting cells
-- (UITableViewCell *)cellInTableViewController:(AFAdaptedTableViewController *)tableViewController
+- (UITableViewCell *)cellInTableViewController:(AFTableViewController *)tableViewController
 {
     UITableViewCell *cell = nil;
 
@@ -73,7 +71,7 @@
     return cell;
 }
 
-- (CGFloat)heightForCellInTableViewController:(AFAdaptedTableViewController *)tableViewController
+- (CGFloat)heightForCellInTableViewController:(AFTableViewController *)tableViewController
 {
     CGFloat height = self.tableViewController.tableView.rowHeight;
 
@@ -85,22 +83,21 @@
     return height;
 }
 
-/// good pragma mark?
 #pragma mark - Delegate, so to speak
 
-- (void)willDisplayInTableViewController:(AFAdaptedTableViewController *)tableViewController
+- (void)willDisplayInTableViewController:(AFTableViewController *)tableViewController
 {
 }
 
-- (void)didEndDisplayingInTableViewController:(AFAdaptedTableViewController *)tableViewController
+- (void)didEndDisplayingInTableViewController:(AFTableViewController *)tableViewController
 {
 }
 
-- (void)didSelectInTableViewController:(AFAdaptedTableViewController *)tableViewController
+- (void)didSelectInTableViewController:(AFTableViewController *)tableViewController
 {
 }
 
-- (void)didDeselectInTableViewController:(AFAdaptedTableViewController *)tableViewController
+- (void)didDeselectInTableViewController:(AFTableViewController *)tableViewController
 {
 }
 
@@ -108,12 +105,13 @@
 
 /**
  * Not a lazy instantiator - notice the _object ivar is never set.
- * This method returns self if no object becuase adapters with
+ * This method returns self if no object becuase controllers with
  * no objects are considered to have themselves as their objects.
  * The reason we don't set self to _object in such a case is that
  * a retain cycle would occur.
- * One might want the adapter itself to be identified as a object
- * if multiple cells representing the same object occur within
+ *
+ * One might want the controller itself to be identified as an 
+ * object if multiple cells representing the same object occur within
  * a table view, which otherwise would result in a 1:many mapping
  * instead of the necessary 1:1 mapping between cells/index paths
  * and objects.
@@ -151,7 +149,7 @@
 
 - (void)heightChangedForCell:(AFTableViewCell *)cell
 {
-    [self.delegate tableRowAdapter:self heightChangedForCellWithObject:self.object];
+    [self.delegate tableCellController:self heightChangedForCellWithObject:self.object];
 }
 
 @end

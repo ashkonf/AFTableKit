@@ -9,16 +9,16 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@class AFTableRowAdapter;
+@class AFTableCellController;
 
 @interface AFStaticTableViewSection : NSObject
 
 + (AFStaticTableViewSection *)sectionWithHeader:(NSString *)header footer:(NSString *)footer;
 
-@property (nonatomic, readonly) NSMutableArray *adapters;
+@property (nonatomic, readonly) NSMutableArray *controllers;
 @property (nonatomic) NSString *header;
 @property (nonatomic) NSString *footer;
 
-- (void)addCellWithAdapter:(AFTableRowAdapter *)adapter;
+- (void)addCellWithController:(AFTableCellController *)controller;
 
 @end

@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "AFAdaptedTableViewController.h"
+#import "AFTableViewController.h"
 
-@class AFTableRowAdapter;
+@class AFTableCellController;
 
-@interface AFStaticTableViewController : AFAdaptedTableViewController
+@interface AFStaticTableViewController : AFTableViewController
 
 - (void)addSectionWithHeader:(NSString *)header footer:(NSString *)footer;
-- (void)addCellWithAdapter:(AFTableRowAdapter *)adapter;
+- (void)addCellWithController:(AFTableCellController *)controller;
 
 @end

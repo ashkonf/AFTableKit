@@ -25,10 +25,9 @@
     return [self af_cellForTableView:tableView withStyle:UITableViewCellStyleDefault];
 }
 
-/// best to not take in table view? any reason to need it?
 + (instancetype)af_staticCellWithStyle:(UITableViewCellStyle)style
 {
-    NSString *CellIdentifier = [NSStringFromClass(self) stringByAppendingString:@"**Static"]; /// best identifier?
+    NSString *CellIdentifier = [NSStringFromClass(self) stringByAppendingString:@"**Static"];
     UITableViewCell *cell = [[self alloc] initWithStyle:style reuseIdentifier:CellIdentifier];
     return cell;
 }

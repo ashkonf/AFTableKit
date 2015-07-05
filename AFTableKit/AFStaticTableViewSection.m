@@ -10,7 +10,7 @@
 
 @implementation AFStaticTableViewSection
 
-@synthesize adapters = _adapters;
+@synthesize controllers = _controllers;
 
 + (AFStaticTableViewSection *)sectionWithHeader:(NSString *)header footer:(NSString *)footer
 {
@@ -20,19 +20,19 @@
     return section;
 }
 
-- (void)addCellWithAdapter:(AFTableRowAdapter *)adapter
+- (void)addCellWithController:(AFTableCellController *)controller
 {
-    [self.adapters addObject:adapter];
+    [self.controllers addObject:controller];
 }
 
 #pragma mark - Setters and Getters
 
-- (NSMutableArray *)adapters
+- (NSMutableArray *)controllers
 {
-    if (!_adapters) {
-        _adapters = [[NSMutableArray alloc] init];
+    if (!_controllers) {
+        _controllers = [[NSMutableArray alloc] init];
     }
-    return _adapters;
+    return _controllers;
 }
 
 @end
