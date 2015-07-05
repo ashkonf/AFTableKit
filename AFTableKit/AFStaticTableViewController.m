@@ -9,10 +9,10 @@
 #import "AFStaticTableViewController.h"
 
 #import "AFStaticTableViewSection.h"
-#import "AFTableRowAdapter.h"
+#import "AFTableCellController.h"
 
 /**
- * Objects are adapters themselves.
+ * Objects are cell controllers themselves.
  */
 @interface AFStaticTableViewController ()
 
@@ -27,13 +27,13 @@
     [self.sections addObject:[AFStaticTableViewSection sectionWithHeader:header footer:footer]];
 }
 
-- (void)addCellWithAdapter:(AFTableRowAdapter *)adapter
+- (void)addCellWithController:(AFTableCellController *)controller
 {
     AFStaticTableViewSection *section = [self.sections lastObject];
-    [section addCellWithAdapter:adapter];
+    [section addCellWithController:controller];
 }
 
-#pragma mark - AFAdaptedTableViewDatasource
+#pragma mark - AFTableViewDatasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -43,16 +43,16 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     AFStaticTableViewSection *sectionObject = self.sections[section];
-    return [sectionObject.adapters count];
+    return [sectionObject.controllers count];
 }
 
 - (id)objectForTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath
 {
     AFStaticTableViewSection *section = self.sections[indexPath.section];
-    return section.adapters[indexPath.row];
+    return section.controllers[indexPath.row];
 }
 
-- (AFTableRowAdapter *)adapterForObject:(id)object inTableView:(UITableView *)tableView
+- (AFTableCellController *)cellControllerForObject:(id)object inTableView:(UITableView *)tableView
 {
     return object;
 }
